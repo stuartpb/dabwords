@@ -1,0 +1,55 @@
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid: 
+    "sidebar viewport" 1fr
+    "footer footer" 32px / 25% 75%;
+  width: 100%;
+  height: 100%;
+  justify-items: stretch;
+  background-color: #777;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#sidebar {
+  grid-area: sidebar;
+  z-index: 1;
+}
+#viewport {
+  grid-area: viewport;
+  display: grid;
+  height: calc(100vh - 32px); /* so the placemat doesn't throw off the grid */
+}
+footer {
+  grid-area: footer;
+  background: #222;
+  z-index: 1;
+}
+#placemat {
+  position: relative;
+  width: 6400px;
+  height: 6400px;
+}
+.square {
+  flex: none;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  color: white;
+  text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
+  font: 40px monospace, monospace;
+  line-height: 100%;
+}
+.field {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  display: grid;
+}
