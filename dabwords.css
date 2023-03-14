@@ -10,7 +10,7 @@ body {
   display: grid;
   grid: 
     "sidebar viewport" 1fr
-    "footer footer" 32px / 25% 75%;
+    "sidebar footer" 32px / 27% 73%;
   width: 100%;
   height: 100%;
   justify-items: stretch;
@@ -47,9 +47,44 @@ footer {
   text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
   font: 40px monospace, monospace;
   line-height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid: .5fr 1fr / 1fr;
+  align-items: start;
+  justify-items: start;
+}
+.def {
+  font-size: 24px;
+  border-radius: 6px;
+  background: #2228;
+  text-shadow: none;
+  box-sizing: border-box;
+  padding: 6px 12px;
 }
 .field {
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   display: grid;
+}
+.label.level3 {
+  font-size: 48px;
+}
+.label.level2 {
+  font-size: 150px;
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  vertical-align: top;
+  text-shadow: 0 0 25px #000, 0 0 25px #000, 0 0 25px #000;
+}
+.label.level1 {
+  font-size: 600px;
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  vertical-align: top;
+  text-shadow: 0 0 50px #000, 0 0 50px #000, 0 0 50px #000;
+}
+[hidden] {
+  visibility: hidden;
 }
