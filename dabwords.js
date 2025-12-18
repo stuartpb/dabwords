@@ -1,7 +1,7 @@
 /* global require monaco */
-import {swizzle} from "https://cdn.skypack.dev/bitfiddle@0.1.1";
-import cre from "https://cdn.skypack.dev/cre@0.3.0";
-import panzoom from 'https://cdn.skypack.dev/panzoom';
+import {swizzle} from "https://esm.sh/bitfiddle@0.1.1";
+import cre from "https://esm.sh/cre@0.4.0";
+import panzoom from "https://esm.sh/panzoom@9.4.3";
 import workingWords from './workingWords.js';
 import {consonant, ends, dab as dabWord, toInt as wToInt} from './wilkersonian.js';
 
